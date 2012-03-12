@@ -10,7 +10,7 @@ if (empty($id)) {
 require_once 'includes/db.php';
 
 $sql = $db->prepare('
-	SELECT id, name, address, telephone, type, city_ward, french_name
+	SELECT id, name, longitude, latitude
 	FROM museums
 	WHERE id = :id
 ');
@@ -33,11 +33,9 @@ if (empty($results)) {
 <body>
 	
 	<h1><?php echo $results['name']; ?></h1>
-    <h2>Type: <?php echo $results['type']; ?></h2>
-	<p>Address: <?php echo $results['address']; ?></p>
-	<p>Telephone: <?php echo $results['telephone']; ?></p>      
-	<p>Area: <?php echo $results['city_ward']; ?></p>
-	<p>French Name: <?php echo $results['french_name']; ?></p>
+    <p>Longitude: <?php echo $results['longitude']; ?></p>
+	<p>Latitude: <?php echo $results['latitude']; ?></p>
+
         
 </body>
 </html>

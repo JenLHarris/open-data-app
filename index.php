@@ -3,9 +3,9 @@
 require_once 'includes/db.php';
 
 $results = $db->query('
-	SELECT id, name, city_ward
+	SELECT id, name, longitude, latitude
 	FROM museums
-	ORDER BY city_ward ASC
+	ORDER BY name ASC
 ');
 
 ?><!DOCTYPE HTML>
