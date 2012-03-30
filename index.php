@@ -1,5 +1,13 @@
 <?php
-
+/**
+ *Displays list, and map, for open data set.
+ *@package Ottawa Museums
+ *@copyright 2012 Jen L Harris
+ *@author Jen L Harris <jen_l_harris@yahoo.com>
+ *@link https://github.com/JenLHarris/open-data-app
+ *@license New BSD License <http://www.freebsd.org/>
+ *@version 1.0.0
+ */
 require_once 'includes/db.php';
 
 $results = $db->query('

@@ -1,4 +1,13 @@
 <?php
+/**
+ *Displays one selected museum, with latitude and longitude.
+ *@package Ottawa Museums
+ *@copyright 2012 Jen L Harris
+ *@author Jen L Harris <jen_l_harris@yahoo.com>
+ *@link https://github.com/JenLHarris/open-data-app
+ *@license New BSD License <http://www.freebsd.org/>
+ *@version 1.0.0
+ */
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
