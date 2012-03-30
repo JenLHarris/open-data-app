@@ -1,13 +1,5 @@
 <?php
-/**
- *Data for Museums in Ottawa
- *@package Ottawa Museums
- *@copyright 2012 Jen L Harris
- *@author Jen L Harris <jen_l_harris@yahoo.com>
- *@link https://github.com/JenLHarris/open-data-app
- *@license New BSD License <http://www.freebsd.org/>
- *@version 1.0.0
- */
+ini_set('display_errors',1); 
 // Gets an environment variable we created in the .htaccess file
 // This is the best way to keep usernames and passwords out of public GitHub repos
 $user = getenv('DB_USER');

@@ -1,13 +1,5 @@
 <?php
-/**
- *Displays list, and map, for open data set.
- *@package Ottawa Museums
- *@copyright 2012 Jen L Harris
- *@author Jen L Harris <jen_l_harris@yahoo.com>
- *@link https://github.com/JenLHarris/open-data-app
- *@license New BSD License <http://www.freebsd.org/>
- *@version 1.0.0
- */
+
 require_once 'includes/db.php';
 
 $results = $db->query('
@@ -21,14 +13,28 @@ $results = $db->query('
 <head>
 	<meta charset="utf-8">
 	<title>Museums - Open Data App</title>
-    <link href="css/public.css">
+    <link href="css/public.css" rel="stylesheet">
     <script src="js/modernizr-2.5.3.js"></script>
 </head>
 <body>
 
-	<?php foreach ($results as $museum) : ?>
-		<h2><a href="single.php?id=<?php echo $museum['id']; ?>"><?php echo $museum['name']; ?></a></h2>	
-	<?php endforeach; ?>
 
+<ol class="museums">
+<?php foreach ($results as $museum) : ?>
+	<li itemscope itemtype="http://schema.org/TouristAttraction">
+		<a href="single.php?id=<?php echo $museum['id']; ?>" itemprop="name"><?php echo $museum['name']; ?></a>
+		<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+			<meta itemprop="latitude" content="<?php echo $museum['latitude']; ?>">
+			<meta itemprop="longitude" content="<?php echo $museum['longitude']; ?>">
+		</span>
+	</li>
+<?php endforeach; ?>
+</ol>
+
+<div id="map"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-EndoKVWgvLY22glz2Xh3CidARcvYQRU&sensor=false"></script>
+	<script src="js/museums.js"></script>
 </body>
 </html>
