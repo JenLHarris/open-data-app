@@ -18,10 +18,16 @@ $results = $db->query('
 </head>
 <body>
 
+<button id="geo">Find Me</button>
+<form id="geo-form">
+    <label for="adr">Address</label>
+    <input id="adr">
+</form>
 
 <ol class="museums">
 <?php foreach ($results as $museum) : ?>
-	<li itemscope itemtype="http://schema.org/TouristAttraction">
+	<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $museum['id']; ?>">
+    	<strong class="distance"></strong>
 		<a href="single.php?id=<?php echo $museum['id']; ?>" itemprop="name"><?php echo $museum['name']; ?></a>
 		<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
 			<meta itemprop="latitude" content="<?php echo $museum['latitude']; ?>">
@@ -35,6 +41,7 @@ $results = $db->query('
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-EndoKVWgvLY22glz2Xh3CidARcvYQRU&sensor=false"></script>
+    <script src="js/latlng.min.js"></script>
 	<script src="js/museums.js"></script>
 </body>
 </html>
