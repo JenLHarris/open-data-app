@@ -19,7 +19,7 @@ $(document).ready(function () {
 		// Create some HTML content for the info window
 		// Style the content in your CSS
 		var info = '<div class="info-window">'
-			+ '<strong>' + museum + '</strong>'
+			+ '<strong>' + mus + '</strong>'
 			+ '</div>'
 		;
 
