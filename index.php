@@ -18,8 +18,7 @@ $results = $db->query('
 </head>
 <body>
 
-<img src="images/bg.png" width="2000" height="1200">
-
+<background-image ="images/bg.png" width="3000" height="2000">
 
 <button id="geo">Find Me</button>
 <form id="geo-form">
