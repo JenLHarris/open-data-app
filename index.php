@@ -18,7 +18,7 @@ $results = $db->query('
 </head>
 <body>
 
-<img src="images/bg.png" width="3072" height="2304">
+<img src="images/bg.png" width="1536" height="1152">
 
 
 <button id="geo">Find Me</button>
