@@ -3,7 +3,7 @@
 require_once 'includes/db.php';
 
 $results = $db->query('
-	SELECT id, name, longitude, latitude
+	SELECT id, name, longitude, latitude, rate_count, rate_total
 	FROM museums
 	ORDER BY name ASC
 ');
@@ -24,8 +24,16 @@ $results = $db->query('
     <input id="adr">
 </form>
 
+
 <ol class="museums">
 <?php foreach ($results as $museum) : ?>
+	<?php
+		if ($museum['rate_count'] > 0) {
+			$rating = round($museum['rate_total'] / $museum['rate_count']);
+		} else {
+			$rating = 0;
+		}
+	?>
 	<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $museum['id']; ?>">
     	<strong class="distance"></strong>
 		<a href="single.php?id=<?php echo $museum['id']; ?>" itemprop="name"><?php echo $museum['name']; ?></a>
@@ -33,6 +41,13 @@ $results = $db->query('
 			<meta itemprop="latitude" content="<?php echo $museum['latitude']; ?>">
 			<meta itemprop="longitude" content="<?php echo $museum['longitude']; ?>">
 		</span>
+        
+		<ol class="rater">
+		<?php for ($i = 1; $i <= 5; $i++) : ?>
+			<?php $class = ($i <= $rating) ? 'is-rated' : ''; ?>
+			<li class="rater-level <?php echo $class; ?>">★</li>
+		<?php endfor; ?>
+		</ol>
 	</li>
 <?php endforeach; ?>
 </ol>
