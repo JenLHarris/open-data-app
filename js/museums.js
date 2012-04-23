@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+	
+	
 	// Create an object that holds options for the GMap
 	
 	var locations = [];
