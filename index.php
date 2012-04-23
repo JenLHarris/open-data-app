@@ -18,6 +18,9 @@ $results = $db->query('
 </head>
 <body>
 
+<img src="images/bg.png" width="3072" height="2304">
+
+
 <button id="geo">Find Me</button>
 <form id="geo-form">
     <label for="adr">Address</label>
@@ -34,7 +37,7 @@ $results = $db->query('
 			$rating = 0;
 		}
 	?>
-	<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $museum['id']; ?>">
+  <li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $museum['id']; ?>">
     	<strong class="distance"></strong>
 		<a href="single.php?id=<?php echo $museum['id']; ?>" itemprop="name"><?php echo $museum['name']; ?></a>
 		<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
