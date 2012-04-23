@@ -83,6 +83,29 @@ $(document).ready(function () {
 	}
 	
 	/****************************************************/
+	/***** Rating Stars *********************************/
+	/****************************************************/
+
+	var $raterLi = $('.rater-usable li');
+
+	// Makes all the lower ratings highlight when hovering over a star
+	$raterLi
+		.on('mouseenter', function (ev) {
+			var current = $(this).index();
+
+			for (var i = 0; i < current; i++) {
+				$raterLi.eq(i).addClass('is-rated-hover');
+			}
+		})
+		.on('mouseleave', function (ev) {
+			$raterLi.removeClass('is-rated-hover');
+		})
+	;
+	
+	
+	
+	
+	/****************************************************/
 	/***** Geolocation **********************************/
 	/****************************************************/
 

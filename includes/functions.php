@@ -46,7 +46,7 @@ function save_rate_cookie ($id, $rate) {
  *  )
  */
 function get_rate_cookie () {
-	$cookie_content = filter_input(INPUT_COOKIE, 'dinobones_rated', FILTER_SANITIZE_STRING);
+	$cookie_content = filter_input(INPUT_COOKIE, 'museums_rated', FILTER_SANITIZE_STRING);
 
 	if (empty($cookie_content)) {
 		return array();
