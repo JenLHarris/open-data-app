@@ -1,5 +1,16 @@
 <?php
 
+/*
+*This is the Functions page.
+*The primary function is to collect ratings.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 /**
  * Sets a cookie to remember the user has already voted.
  * We have to remember the ID of every single thing they voted on

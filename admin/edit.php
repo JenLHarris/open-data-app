@@ -1,5 +1,16 @@
 <?php
 
+/*
+*This is the Edit page.
+*The primary function is for admin to update information on the list.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 $errors = array();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);

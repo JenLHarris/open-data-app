@@ -1,5 +1,16 @@
 <?php
 
+/*
+*This is the Admin index page.
+*The primary function is as a homepage, starting point for admin to Add/Edit/Delete from the database.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 require_once '../includes/db.php';
 
 $results = $db->query('

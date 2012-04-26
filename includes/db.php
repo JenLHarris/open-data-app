@@ -1,4 +1,16 @@
 <?php
+
+/*
+*This is the DB page.
+*The primary function is to provide the database information onto the page.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 ini_set('display_errors',1); 
 // Gets an environment variable we created in the .htaccess file
 // This is the best way to keep usernames and passwords out of public GitHub repos

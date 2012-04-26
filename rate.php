@@ -1,5 +1,16 @@
 <?php
 
+/*
+*This is the Rate page.
+*The primary function is to collect ratings from users.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 require_once 'includes/db.php';
 require_once 'includes/functions.php';
 

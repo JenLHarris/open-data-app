@@ -1,4 +1,15 @@
 <?php
+/*
+*This is the index page, or the homepage.
+*The primary functions are to link up all of the elements included in the app.
+*
+*@package
+*@copyright 2012 Jen Harris
+*@author Jen Harris <jen_l_harris@yahoo.com>
+*@link http://github.com/harr0475/open-data-app
+*@version 1.0.0
+*/
+
 
 require_once 'includes/db.php';
 
