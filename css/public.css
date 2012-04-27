@@ -20,7 +20,7 @@ top: 0;
 width: 900px;
 height: 600px;
 border:thick;
-border-color:#009933;
+border-color:#FFC;
 }
 
 .admin a,
@@ -72,7 +72,7 @@ color: #efecd2;
 .rater-level a,
 .rater-level a:link,
 .rater-level a:visited {
-color: #efecd2;
+color: #FFC;
 text-decoration: none
 }
 
@@ -89,7 +89,7 @@ text-decoration: none
 .is-rated-hover a,
 .is-rated-hover a:link,
 .is-rated-hover a:visited {
-color: #ffe91f;
+color: #FFC;
 }
 
 .info-window strong {
