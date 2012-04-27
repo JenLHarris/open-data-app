@@ -89,13 +89,13 @@ line-height: 1;
 
 .rater-level {
 float: left;
-color: #060;
+color: #FFC;
 }
 
 .rater-level a,
 .rater-level a:link,
 .rater-level a:visited {
-color: #060;
+color:  #FFC;
 text-decoration: none
 }
 
@@ -112,7 +112,7 @@ text-decoration: none
 .is-rated-hover a,
 .is-rated-hover a:link,
 .is-rated-hover a:visited {
-color: #FFC;
+color: #060;
 }
 
 .info-window strong {
