@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {
+margin: 5em;
+background-image: url(../images/bg.png);
+font-size: 20px;
+color: #0C3;
+}
+
 #map {
 bottom: 0;
 position: relative;

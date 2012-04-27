@@ -29,8 +29,6 @@ $results = $db->query('
 </head>
 <body>
 
-<background-image ="images/bg.png" width="3000" height="2000">
-
 <button id="geo">Find Me</button>
 <form id="geo-form">
     <label for="adr">Address</label>
