@@ -32,6 +32,20 @@ color: #FFC;
 text-decoration: none;
 }
 
+info-window a,
+info-window a:link,
+info-window a:visited {
+	color: #003;
+	text-decoration: none;	
+}
+
+info-window a:hover,
+info-window a:active,
+info-window a:focus {
+	color: #093;
+	text-decoration: none;	
+}
+
 .museums li {
 cursor: pointer;
 }
