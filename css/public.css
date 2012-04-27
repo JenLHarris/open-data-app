@@ -3,7 +3,9 @@
 
 body {
 margin: 5em;
-background: url(../images/bg.png) 100%;
+background: url(../images/bg.png);
+background-width: 120%;
+bacground-height: 120%;
 font-size: 20px;
 color: #FFC;
 }
@@ -23,13 +25,13 @@ cursor: pointer;
 }
 
 .museums li:hover {
-background-color: #f4f3f0;
+background-color: #690;
 }
 
 .museums a,
 .museums a:link,
 .museums a:visited {
-color: #063;
+color: #FFC;
 text-decoration: none;
 }
 
