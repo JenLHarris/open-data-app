@@ -4,10 +4,15 @@
 body {
 margin: 5em;
 background: url(../images/bg.png);
-background-width: 120%;
-bacground-height: 120%;
 font-size: 20px;
 color: #FFC;
+
+}
+#img.source-image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #map {
@@ -15,8 +20,9 @@ bottom: 0;
 position: relative;
 right: 0;
 top: 0;
-width: 800px;
-height: 500px;
+width: 900px;
+height: 600px;
+border:thick;
 border-color:#009933;
 }
 
