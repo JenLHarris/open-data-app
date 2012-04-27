@@ -28,6 +28,7 @@ $results = $db->query('
     <script src="js/modernizr-2.5.3.js"></script>
 </head>
 <body>
+<div id="wrapper">
 <a href="admin/index.php">Admin</a>
 
 <p>Input an address to search museums by distance:</p>
@@ -66,7 +67,7 @@ $results = $db->query('
 </ol>
 
 <div id="map"></div>
-
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-EndoKVWgvLY22glz2Xh3CidARcvYQRU&sensor=false"></script>
     <script src="js/latlng.min.js"></script>

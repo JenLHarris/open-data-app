@@ -12,6 +12,12 @@ font-size: 20px;
 color: #333;
 }
 
+#wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #fff;	
+}
+
 #map {
 bottom: 0;
 position: relative;
