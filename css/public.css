@@ -22,7 +22,9 @@ height: 600px;
 border:thick;
 border-color:#FFC;
 }
-
+a,
+a:link,
+a:visited,
 .admin a,
 .admin a:link,
 .admin a:visited {
@@ -72,7 +74,7 @@ color: #FFC;
 .rater-level a,
 .rater-level a:link,
 .rater-level a:visited {
-color: #369;
+color: #FFC;
 text-decoration: none
 }
 
