@@ -8,6 +8,7 @@ font-size: 20px;
 color: #FFC;
 
 }
+
 #img.source-image {
 	width: 100%;
 	position: absolute;
@@ -26,6 +27,13 @@ border:thick;
 border-color:#009933;
 }
 
+.admin a,
+.admin a:link,
+.admin a:visited {
+color: #6CC;
+text-decoration: none;
+}
+
 .museums li {
 cursor: pointer;
 }
@@ -37,7 +45,7 @@ background-color: #690;
 .museums a,
 .museums a:link,
 .museums a:visited {
-color: #FFC;
+color: #6CC;
 text-decoration: none;
 }
 
@@ -57,14 +65,12 @@ display: inline-block;
 margin: 0;
 padding: 0;
 vertical-align: middle;
-
 list-style-type: none;
 line-height: 1;
 }
 
 .rater-level {
 float: left;
-
 color: #efecd2;
 }
 
