@@ -33,7 +33,7 @@ $(document).ready(function () {
 			// Style the content in your CSS
 			var info = '<div class="info-window">'
 				+ '<strong>' + museum + '</strong>'
-				+ '<a href="single.php?id=' + $(this).attr('data-id') + '">Rate or Comment!</a>'
+				+ '<a href="single.php?id=' + $(this).attr('data-id') + '">Rate!</a>'
 				+ '</div>'
 			;
 
