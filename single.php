@@ -51,10 +51,11 @@ $cookie = get_rate_cookie();
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $results['name']; ?> &middot; Museums - Open Data App</title>
+    <link href="css/public.css" rel="stylesheet">
 </head>
 <body>
 	
-	
+	<div id="wrapper">
 <h1><?php echo $results['name']; ?></h1>
 
 <dl>
@@ -83,6 +84,6 @@ $cookie = get_rate_cookie();
 </ol>
 
 <?php endif; ?>
-        
+   </div>     
 </body>
 </html>
