@@ -28,7 +28,9 @@ $results = $db->query('
     <script src="js/modernizr-2.5.3.js"></script>
 </head>
 <body>
+<a hre="admin/index.php">Admin</a>
 
+<p>Input an address to search museums by distance:</p>
 <button id="geo">Find Me</button>
 <form id="geo-form">
     <label for="adr">Address</label>
