@@ -1,3 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {
+	margin: 5em;
+	font-size:18px;
+	color: #FFC;
+}
+

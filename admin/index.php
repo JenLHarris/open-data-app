@@ -11,6 +11,13 @@
 *@version 1.0.0
 */
 
+require_once '../includes/users.php';
+
+if (!user_signed_in()) {
+	header('Location: sign-in.php');
+	exit;
+}
+
 require_once '../includes/db.php';
 
 $results = $db->query('
@@ -38,5 +45,7 @@ $results = $db->query('
 		<a href="delete.php?id=<?php echo $museum['id']; ?>">Delete</a>	
 	<?php endforeach; ?>
 	
+    
+<a href="sign-out.php">Sign Out</a>
 </body>
 </html>
