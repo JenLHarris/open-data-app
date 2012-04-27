@@ -3,17 +3,10 @@
 
 body {
 margin: 5em;
-background: url(../images/bg.png);
+background: url(../images/bg.png) 100% 100%;
 font-size: 20px;
 color: #FFC;
 
-}
-
-#img.source-image {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 #map {
