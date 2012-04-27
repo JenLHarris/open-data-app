@@ -66,13 +66,13 @@ line-height: 1;
 
 .rater-level {
 float: left;
-color: #efecd2;
+color: #FFC;
 }
 
 .rater-level a,
 .rater-level a:link,
 .rater-level a:visited {
-color: #FFC;
+color: #369;
 text-decoration: none
 }
 
