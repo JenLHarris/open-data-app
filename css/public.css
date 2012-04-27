@@ -7,6 +7,7 @@ background: url(../images/bg.png) no-repeat center center fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+margin: 5em;
 font-size: 20px;
 color: #FFC;
 }
@@ -25,7 +26,7 @@ border-color:#009933;
 .admin a,
 .admin a:link,
 .admin a:visited {
-color: #6CC;
+color: #FFC;
 text-decoration: none;
 }
 
@@ -34,13 +35,13 @@ cursor: pointer;
 }
 
 .museums li:hover {
-background-color: #690;
+background-color: #9FF;
 }
 
 .museums a,
 .museums a:link,
 .museums a:visited {
-color: #6CC;
+color: #FFC;
 text-decoration: none;
 }
 
